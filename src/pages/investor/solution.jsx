@@ -1,5 +1,6 @@
 import SectionLayout from '../../components/SectionLayout'
 import CTAButton from '../../components/CTAButton'
+import links from '../../data/links.json'
 import images from '../../data/images.json'
 
 export default function Solution() {
@@ -17,7 +18,7 @@ export default function Solution() {
           <div className="text-sm text-slate-400">Built for real running clubs</div>
         </div>
         <div className="flex gap-3">
-          <CTAButton to="/demo" variant="secondary">View Demo</CTAButton>
+          <a href={links.demo} target="_blank" rel="noreferrer" className="inline-block px-5 py-3 rounded-lg bg-sky-600 hover:bg-sky-500 text-white">View Demo</a>
           <CTAButton to="/investor/tam">Next: TAM</CTAButton>
         </div>
       </div>
