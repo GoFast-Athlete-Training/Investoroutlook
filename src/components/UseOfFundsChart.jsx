@@ -10,8 +10,8 @@ export default function UseOfFundsChart({ items }) {
               <span>{i.label}</span>
               <span>${i.amount.toLocaleString()} · {pct}%</span>
             </div>
-            <div className="w-full h-3 bg-slate-800 rounded">
-              <div className="h-3 rounded bg-indigo-500" style={{ width: `${pct}%` }} />
+            <div className="w-full h-3 bg-neutral-800 rounded">
+              <div className="h-3 rounded bg-sky-500" style={{ width: `${pct}%` }} />
             </div>
           </div>
         )

@@ -6,4 +6,14 @@ html, body, #root {
   height: 100%;
 }
 
+/* GoFast Brand Background */
+.gofast-bg {
+  background: linear-gradient(135deg, #0E1A36 0%, #2F5EEA 100%);
+}
+
+/* Brand font fallback if Inter not loaded */
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
 
