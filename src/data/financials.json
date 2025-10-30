@@ -1,0 +1,21 @@
+{
+  "table": [
+    { "Quarter": "Q1 2026", "Total Users": "0→500", "Total Clubs": "5", "Local Pros": "0", "Revenue": "$0", "Costs": "$60K", "Net Burn": "-$60K", "Key Milestones": "Pre-seed close, MVP complete" },
+    { "Quarter": "Q2 2026", "Total Users": "2K", "Total Clubs": "20", "Local Pros": "10", "Revenue": "$3K", "Costs": "$75K", "Net Burn": "-$72K", "Key Milestones": "Boston launch" },
+    { "Quarter": "Q3 2026", "Total Users": "10K", "Total Clubs": "100", "Local Pros": "40", "Revenue": "$15K", "Costs": "$75K", "Net Burn": "-$60K", "Key Milestones": "DMV expansion" },
+    { "Quarter": "Q4 2026", "Total Users": "25K", "Total Clubs": "250", "Local Pros": "100", "Revenue": "$40K", "Costs": "$80K", "Net Burn": "-$40K", "Key Milestones": "5-city rollout" },
+    { "Quarter": "Q1 2027", "Total Users": "50K", "Total Clubs": "500", "Local Pros": "150", "Revenue": "$90K", "Costs": "$90K", "Net Burn": "$0", "Key Milestones": "Breakeven" },
+    { "Quarter": "Q2 2027", "Total Users": "75K", "Total Clubs": "700", "Local Pros": "200", "Revenue": "$150K", "Costs": "$110K", "Net Burn": "+$40K", "Key Milestones": "Seed close" },
+    { "Quarter": "Q3 2027", "Total Users": "100K", "Total Clubs": "900", "Local Pros": "250", "Revenue": "$250K", "Costs": "$130K", "Net Burn": "+$120K", "Key Milestones": "National scale" },
+    { "Quarter": "Q4 2027", "Total Users": "150K", "Total Clubs": "1200", "Local Pros": "350", "Revenue": "$400K", "Costs": "$150K", "Net Burn": "+$250K", "Key Milestones": "Profit run rate" }
+  ],
+  "useOfFunds": [
+    { "label": "Dev", "amount": 100000 },
+    { "label": "Community Manager", "amount": 50000 },
+    { "label": "Founder Stipend", "amount": 50000 },
+    { "label": "Marketing", "amount": 35000 },
+    { "label": "Infra/Events/Office", "amount": 15000 }
+  ]
+}
+
+
