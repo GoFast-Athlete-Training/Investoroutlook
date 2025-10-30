@@ -8,7 +8,6 @@ export default function Problem() {
       title="The Problem"
       subtitle="Run clubs exploded — but there’s no digital backbone. Tracking apps aren’t community."
       imageUrl={images.problem}
-      prev={{ href: '/investor', label: 'Intro' }}
       next={{ href: '/investor/solution', label: 'Solution' }}
     >
       <div className="text-slate-300 space-y-4">
