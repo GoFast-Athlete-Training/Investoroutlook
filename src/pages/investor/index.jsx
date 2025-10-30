@@ -1,16 +1,18 @@
 import SectionLayout from '../../components/SectionLayout'
 import CTAButton from '../../components/CTAButton'
+import images from '../../data/images.json'
 
 export default function InvestorIndex() {
   return (
     <SectionLayout
-      title="The Future of Run Community is Here."
-      subtitle="Modular investor narrative"
+      title="Build and Grow Your Running Club"
+      subtitle="All-in-one home for crews, events, and coaching"
+      imageUrl={images.intro}
       next={{ href: '/investor/problem', label: 'Next: Problem' }}
     >
       <div className="text-slate-300 space-y-6">
-        <p>Explore the GoFast story, one focused section at a time.</p>
-        <CTAButton to="/investor/problem">Start with the Problem</CTAButton>
+        <p>Launch your club, run better events, and give runners a place to belong.</p>
+        <CTAButton to="/investor/problem">See the Problem</CTAButton>
       </div>
     </SectionLayout>
   )

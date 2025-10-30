@@ -1,4 +1,5 @@
 import SectionLayout from '../../components/SectionLayout'
+import images from '../../data/images.json'
 
 export default function Model() {
   const cards = [
@@ -10,7 +11,8 @@ export default function Model() {
   ]
   return (
     <SectionLayout
-      title="Business Model"
+      title="How Clubs and Pros Earn"
+      imageUrl={images.model}
       prev={{ href: '/investor/differentiator', label: 'Why Us' }}
       next={{ href: '/investor/financials', label: 'Financials' }}
     >

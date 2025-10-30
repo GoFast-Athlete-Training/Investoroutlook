@@ -1,4 +1,5 @@
 import SectionLayout from '../../components/SectionLayout'
+import images from '../../data/images.json'
 
 export default function Differentiator() {
   const bullets = [
@@ -9,7 +10,8 @@ export default function Differentiator() {
   ]
   return (
     <SectionLayout
-      title="Why GoFast Wins"
+      title="Why Clubs Win on GoFast"
+      imageUrl={images.differentiator}
       prev={{ href: '/investor/tam', label: 'Market' }}
       next={{ href: '/investor/model', label: 'Model' }}
     >

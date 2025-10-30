@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-export default function SectionLayout({ title, subtitle, children, prev, next }) {
+export default function SectionLayout({ title, subtitle, children, prev, next, imageUrl }) {
   return (
     <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center p-6">
       <motion.div
@@ -11,6 +11,11 @@ export default function SectionLayout({ title, subtitle, children, prev, next })
         transition={{ duration: 0.4 }}
         className="w-full max-w-5xl"
       >
+        {imageUrl && (
+          <div className="mb-6 overflow-hidden rounded-lg border border-slate-800">
+            <img src={imageUrl} alt="section cover" className="w-full h-56 object-cover" />
+          </div>
+        )}
         <div className="mb-8">
           <h1 className="text-3xl md:text-5xl font-bold mb-3">{title}</h1>
           {subtitle && <p className="text-slate-300 text-lg">{subtitle}</p>}

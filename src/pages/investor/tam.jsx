@@ -1,10 +1,12 @@
 import SectionLayout from '../../components/SectionLayout'
 import AnimatedCounter from '../../components/AnimatedCounter'
+import images from '../../data/images.json'
 
 export default function Tam() {
   return (
     <SectionLayout
-      title="The Market Opportunity"
+      title="Runners and Clubs at Massive Scale"
+      imageUrl={images.tam}
       prev={{ href: '/investor/solution', label: 'Solution' }}
       next={{ href: '/investor/differentiator', label: 'Why Us' }}
     >

@@ -1,11 +1,13 @@
 import SectionLayout from '../../components/SectionLayout'
 import CTAButton from '../../components/CTAButton'
+import images from '../../data/images.json'
 
 export default function Solution() {
   return (
     <SectionLayout
-      title="The Solution — GoFast"
-      subtitle="Meetup for athletes with tracking, messaging, and pro help built in."
+      title="The Solution — GoFast for Clubs"
+      subtitle="Social + scheduling + payments + coaching in one place."
+      imageUrl={images.solution}
       prev={{ href: '/investor/problem', label: 'Problem' }}
       next={{ href: '/investor/tam', label: 'Market' }}
     >

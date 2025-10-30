@@ -1,9 +1,11 @@
 import SectionLayout from '../../components/SectionLayout'
+import images from '../../data/images.json'
 
 export default function Team() {
   return (
     <SectionLayout
       title="The Founder"
+      imageUrl={images.team}
       prev={{ href: '/investor/ask', label: 'Ask' }}
     >
       <div className="space-y-2 text-slate-200">
