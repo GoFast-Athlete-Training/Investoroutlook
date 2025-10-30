@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import logo from '../assets/gofast-logo.jpg'
 
 export default function Welcome() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#0E1A36] via-[#1B2D5A] to-[#243B7B] flex flex-col items-center justify-center text-center gap-6 px-6">
+    <section className="min-h-screen bg-gradient-to-b from-sky-300 via-sky-400 to-sky-500 flex flex-col items-center justify-center text-center gap-6 px-6">
       <motion.img
         src={logo}
         alt="GoFast"
@@ -13,17 +14,8 @@ export default function Welcome() {
         transition={{ duration: 0.5, delay: 0.3 }}
       />
 
-      <motion.h1
-        className="text-6xl font-bold text-white"
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.6 }}
-      >
-        GoFast
-      </motion.h1>
-
       <motion.p
-        className="text-xl text-blue-200 mt-2"
+        className="text-xl text-white mt-2"
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.9 }}
@@ -32,7 +24,7 @@ export default function Welcome() {
       </motion.p>
 
       <motion.p
-        className="text-md text-blue-300 mt-2 italic"
+        className="text-md text-white mt-2 italic"
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.0 }}
@@ -46,12 +38,20 @@ export default function Welcome() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.1 }}
       >
-        <button className="bg-[#FA3E3E] hover:bg-[#FF6A3D] text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-200">
+        <a
+          href="https://www.gofastcrushgoals.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white hover:bg-gray-100 text-sky-600 px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-200"
+        >
           Enter the Experience
-        </button>
-        <button className="border border-[#FA3E3E] text-[#FA3E3E] px-6 py-3 rounded-xl font-semibold hover:bg-[#FA3E3E]/10 transition-all duration-200">
-          Investor Overview
-        </button>
+        </a>
+        <Link
+          to="/company-intro"
+          className="border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-all duration-200"
+        >
+          Our Pitch
+        </Link>
       </motion.div>
     </section>
   )
