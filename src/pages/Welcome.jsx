@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
-import logo from '../../assets/gofast-logo.jpg'
+import logo from '../assets/gofast-logo.jpg'
 
-export default function InvestorIndex() {
+export default function Welcome() {
   return (
     <section className="min-h-screen bg-gradient-to-b from-[#0E1A36] via-[#1B2D5A] to-[#243B7B] flex flex-col items-center justify-center text-center gap-6 px-6">
       <motion.img
@@ -47,18 +46,12 @@ export default function InvestorIndex() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.1 }}
       >
-        <Link
-          to="/investor/problem"
-          className="bg-[#FA3E3E] hover:bg-[#FF6A3D] text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-200"
-        >
+        <button className="bg-[#FA3E3E] hover:bg-[#FF6A3D] text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-200">
           Enter the Experience
-        </Link>
-        <Link
-          to="/investor/financials"
-          className="border border-[#FA3E3E] text-[#FA3E3E] px-6 py-3 rounded-xl font-semibold hover:bg-[#FA3E3E]/10 transition-all duration-200"
-        >
+        </button>
+        <button className="border border-[#FA3E3E] text-[#FA3E3E] px-6 py-3 rounded-xl font-semibold hover:bg-[#FA3E3E]/10 transition-all duration-200">
           Investor Overview
-        </Link>
+        </button>
       </motion.div>
     </section>
   )
